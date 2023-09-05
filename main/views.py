@@ -165,7 +165,6 @@ def contact_us(request):
                     success_message = 'تم استلام رسالتك بنجاح. سنعمل على معالجتها والرد عليك في أقرب وقت.'
                 except:
                     error_message = 'حدث خطأ'
-    print(error_message, success_message)
 
     return render(request, 'contact_page.html', {
         'success': success_message,
